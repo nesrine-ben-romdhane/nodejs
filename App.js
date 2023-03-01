@@ -30,11 +30,11 @@ yargs.command({
     command : "read",
     describe: "read item",
     builder: {
-        // id : {
-        //     describe: "adding the id ",
-        //     demandOption: true,
-        //     type: "string"
-        // }
+        id : {
+            describe: "adding the id ",
+            demandOption: true,
+            type: "string"
+         }
     },
     handler: (x)=> {
         data.readdata(x.id)
